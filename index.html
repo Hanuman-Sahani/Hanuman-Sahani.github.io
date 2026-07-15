@@ -5,7 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hanuman Sahani</title>
+  <title>Hanuman Sahani — SDE-II · Flutter, Laravel & AI/ML Developer</title>
+  <meta name="description"
+    content="Hanuman Sahani — SDE-II with 4.5+ years building production Flutter & Laravel apps and AI/ML systems. 6+ live apps on Play Store & App Store." />
+  <meta name="author" content="Hanuman Sahani" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hanuman Sahani — SDE-II · Flutter, Laravel & AI/ML Developer" />
+  <meta property="og:description"
+    content="4.5+ years shipping production Flutter & Laravel apps and AI-powered systems. 6+ live apps on the stores." />
+  <meta property="og:type" content="website" />
 
   <!-- bootstrap css cdn link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,7 +32,7 @@
   <!-- bootstrap icon cdn link  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-  <!-- for adding animation to website we have use AOS library 
+  <!-- for adding animation to website we have use AOS library
     AOS Library css file cdn link -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -35,29 +44,33 @@
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
     <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <a class="navbar-brand fw-bold fs-3" href="#home" style="color: #3f396d">Hanuman<span
+          class="c-orange-text">.dev</span></a>
       <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <i class="bi bi-menu-button-fill"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#service">Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonials</a>
+            <a class="nav-link" href="#blog">Highlights</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -72,45 +85,64 @@
 
   <!-- home section starts  -->
   <section class="home pt-5 pb-5" id="home">
-    <div class="row justify-content-evenly align-middle">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="row justify-content-evenly align-items-center">
       <!-- here data-aos is used for adding aos animation  -->
       <div class="col-12 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <span class="hero-badge">👋 Available for new opportunities</span>
         <h2 style="color: #3f396d">
           Hello! I Am <br /><span class="c-orange">Hanuman Sahani</span>
         </h2>
-        <p class="text-muted">
-          I’m a highly skilled <strong>Flutter & Laravel Developer</strong> with 4.5 years of experience in building
-          scalable, high-performance web and mobile applications.
-          My expertise lies in creating sleek, responsive, and user-friendly interfaces with robust backend systems that
-          ensure seamless functionality.
-
-          With a strong foundation in <strong>Flutter</strong>, I develop cross-platform mobile applications with smooth
-          animations, intuitive UI, and optimized performance.
-          On the backend, I leverage <strong>Laravel</strong> to build secure, efficient, and well-structured APIs,
-          admin dashboards, and full-stack applications.
-
-          <strong>My skill set includes:</strong>
-          ✅ Flutter (Dart) – Cross-platform mobile development
-          ✅ Laravel (PHP) – Backend development & API integration
-          ✅ Firebase, MySQL – Scalable database management
-          ✅ RESTful APIs, GraphQL – Secure and efficient communication
-          ✅ State management (Provider, Riverpod, Bloc) for Flutter
-          ✅ Payment gateway, Push notifications, Real-time chat
-          ✅ UI/UX optimization for smooth user experience
-
-          I am passionate about writing clean, maintainable code and keeping up with the latest industry trends.
-          Let’s collaborate and bring your ideas to life with cutting-edge technology! 🚀
+        <p class="role-line">SDE-II · Flutter &amp; Laravel Developer · AI / ML Engineer</p>
+        <p class="text-muted hero-intro">
+          I’m an <strong>SDE-II</strong> with <strong>4.5+ years</strong> building scalable, high-performance
+          <strong>Flutter</strong> apps and robust <strong>Laravel</strong> backends across HRMS/payroll, retail
+          field-force, eCommerce and healthcare. I also ship real <strong>AI/ML</strong> — from camera-based
+          face-recognition attendance (ArcFace + FAISS) to Whisper-powered speech-to-text — and lead delivery as a
+          <strong>Team Lead &amp; Project Coordinator</strong>.
         </p>
 
-        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
-          onclick="window.location.href='mailto:hanumansahani7388@gmail.com?subject=Hire%20Me%20Inquiry'">
-          Hire Me
-        </button>
+        <!-- quick stats -->
+        <div class="hero-stats row text-center text-md-start mt-4">
+          <div class="col-3">
+            <span class="stat-num">4.5+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="col-3">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Live Apps</span>
+          </div>
+          <div class="col-3">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="col-3">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Companies</span>
+          </div>
+        </div>
 
-        <a href="" class="link ms-4 d-none">See My Work</a>
+        <div class="mt-4 d-flex flex-column flex-md-row align-items-center gap-3">
+          <button class="c-btn h-btn py-3 px-5 rounded-pill"
+            onclick="window.location.href='mailto:hanumansahani7388@gmail.com?subject=Hire%20Me%20Inquiry'">
+            Hire Me
+          </button>
+          <a href="Hanuman_Sahani_Resume.pdf" download class="link download-link">Download CV ↓</a>
+        </div>
+
+        <!-- social icons -->
+        <div class="hero-social mt-4 d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="https://github.com/Hanuman-Sahani" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/hanuman-sahani-928404246/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=7651864655" target="_blank" aria-label="WhatsApp"><i
+              class="bi bi-whatsapp"></i></a>
+          <a href="mailto:hanumansahani7388@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </div>
       </div>
       <div class="col-12 col-md-4 d-none d-md-block">
-        <img src="images/IMG_20240221_153548 Background Removed.png" class="img-fluid" alt="" />
+        <img src="images/IMG_20240221_153548 Background Removed.png" class="img-fluid" alt="Hanuman Sahani" />
+      </div>
       </div>
     </div>
   </section>
@@ -125,86 +157,72 @@
         Digital Services
       </h3>
     </div>
-    <div class="row justify-content-evenly mt-5">
-      <div class="col-10 col-md-4" data-aos="fade-up">
-        <div class="service-card">
+    <div class="row justify-content-center g-4 mt-4 px-3">
+      <div class="col-11 col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="service-card h-100">
           <div class="img">
             <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="Flutter Development" />
           </div>
           <div class="content mt-3">
             <h4>Flutter Development</h4>
             <p class="text-muted">
-              Build high-performance, cross-platform mobile applications with Flutter for Android and iOS.
+              Cross-platform Android &amp; iOS apps with BLoC, Clean Architecture, offline-first sync and smooth,
+              pixel-perfect UI.
             </p>
-            <a href="https://flutter.dev/" class="link">Read More</a>
+            <a href="https://flutter.dev/" class="link" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
- -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-      <div class="col-md-4 col-10" data-aos="fade-up">
-        <div class="service-card">
+      <div class="col-11 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card h-100">
           <div class="img">
             <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="Laravel Development" />
           </div>
           <div class="content mt-3">
-            <h4>Laravel Development</h4>
+            <h4>Laravel &amp; APIs</h4>
             <p class="text-muted">
-              Develop robust, scalable, and secure web applications using Laravel, the PHP framework for artisans.
+              Secure, scalable REST APIs, admin dashboards and full-stack systems in Laravel + MySQL, with WebSocket
+              real-time pipelines.
             </p>
-            <a href="https://laravel.com/" class="link">Read More</a>
+            <a href="https://laravel.com/" class="link" target="_blank">Read More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-10" data-aos="fade-up">
-        <div class="service-card">
+
+      <div class="col-11 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card h-100">
           <div class="img">
-            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="Debugging" />
+            <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="AI / ML" />
           </div>
           <div class="content mt-3">
-            <h4>Debugging</h4>
+            <h4>AI / ML &amp; Vision</h4>
             <p class="text-muted">
-              Identify and fix bugs efficiently to ensure smooth and error-free application performance.
+              Production computer vision — face recognition (ArcFace/InsightFace, FAISS, OpenCV, ONNX) and Whisper
+              speech-to-text.
             </p>
-            <a href="https://docs.flutter.dev/testing/debugging" class="link">Read More</a>
+            <a href="#portfolio" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card h-100">
+          <div class="img">
+            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="Team Leadership" />
+          </div>
+          <div class="content mt-3">
+            <h4>Team Lead &amp; Delivery</h4>
+            <p class="text-muted">
+              Client requirement meetings, SOW, sprint planning, code reviews and end-to-end delivery from design to
+              store release.
+            </p>
+            <a href="#experience" class="link">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- expertise section ends here -->
 
   <!-- skill section starts -->
@@ -223,17 +241,6 @@
           </div>
           <div class="col-10 col-md-6 mt-4 mt-md-0">
             <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress javascript">
-                <span class="progress-value javascript-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">Xcode</span>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
               <div class="circular-progress php">
                 <span class="progress-value php-progress">0%</span>
               </div>
@@ -241,13 +248,44 @@
               <span class="text">Laravel</span>
             </div>
           </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress python">
+                <span class="progress-value python-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Python</span>
+            </div>
+          </div>
           <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3  ms-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress aiml">
+                <span class="progress-value aiml-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">AI / ML</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">BLoC / Arch.</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
               <div class="circular-progress reactjs">
                 <span class="progress-value reactjs-progress">0%</span>
               </div>
-              <br>
-              <span class="text">Firebase</span>
+              <br />
+              <span class="text">Firebase / DB</span>
             </div>
           </div>
         </div>
@@ -255,29 +293,47 @@
       <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
         <div class="heading mt-5 mt-md-3">
           <small>My Skills</small>
-          <h3>Building Scalable & High-Performance Apps</h3>
+          <h3>Building Scalable &amp; AI-Powered Apps</h3>
           <p class="text-muted">
-            I specialize in crafting modern, high-performance mobile and web applications using cutting-edge
-            technologies.
-            From front-end UI/UX design to back-end development and database management, I ensure seamless digital
-            experiences.
+            I craft modern, high-performance mobile and web applications — from front-end UI/UX to backend APIs,
+            databases and real-world AI. End-to-end, design to store release.
           </p>
           <p class="text-muted">
-            🚀 <strong>Flutter & Xcode:</strong> Proficient in developing cross-platform applications with Flutter and
-            integrating native iOS features using Xcode for a seamless iOS experience.
+            🚀 <strong>Flutter &amp; Dart:</strong> Cross-platform apps on BLoC + Clean Architecture, offline-first,
+            push notifications and native integrations.
           </p>
           <p class="text-muted">
-            ⚡ <strong>Laravel:</strong> Expertise in building robust, scalable, and secure web applications using
-            Laravel,
-            ensuring efficient API development and backend management.
+            ⚡ <strong>Laravel &amp; Python:</strong> Secure REST APIs, WebSocket pipelines, payroll automation and
+            scalable backend services.
           </p>
           <p class="text-muted">
-            🔥 <strong>Firebase:</strong> Skilled in Firebase integration for real-time databases, authentication, cloud
-            functions,
-            push notifications, and analytics to enhance app performance.
+            🤖 <strong>AI / ML:</strong> Face-recognition attendance (ArcFace, FAISS, OpenCV, ONNX) and Whisper
+            speech-to-text shipped into production.
           </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            <a href="Hanuman Sahani.pdf" download="SampleCV" style="text-decoration: none; color: #fff;">Download CV</a>
+
+          <!-- tech badges -->
+          <div class="tech-badges mt-4">
+            <span class="badge-tech">Flutter</span>
+            <span class="badge-tech">Dart</span>
+            <span class="badge-tech">BLoC</span>
+            <span class="badge-tech">Clean Architecture</span>
+            <span class="badge-tech">Laravel</span>
+            <span class="badge-tech">Python</span>
+            <span class="badge-tech">REST API</span>
+            <span class="badge-tech">WebSocket</span>
+            <span class="badge-tech">MySQL</span>
+            <span class="badge-tech">Firebase</span>
+            <span class="badge-tech">ArcFace</span>
+            <span class="badge-tech">FAISS</span>
+            <span class="badge-tech">OpenCV</span>
+            <span class="badge-tech">ONNX</span>
+            <span class="badge-tech">Whisper</span>
+            <span class="badge-tech">Git &amp; CI/CD</span>
+          </div>
+
+          <button class="c-btn h-btn mt-4 py-3 px-5 rounded-pill">
+            <a href="Hanuman_Sahani_Resume.pdf" download="Hanuman_Sahani_CV"
+              style="text-decoration: none; color: #fff;">Download CV</a>
           </button>
         </div>
       </div>
@@ -285,6 +341,81 @@
     </div>
   </section>
   <!-- skill section end here -->
+
+  <!-- experience section starts -->
+  <section class="experience py-5" id="experience">
+    <div class="heading text-center pt-4">
+      <small>Career Path</small>
+      <h3>Work Experience</h3>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-11 col-md-8 timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <span class="exp-period">Jan 2024 – Present</span>
+            <h4>SDE-II — Software Development Engineer II</h4>
+            <h5>AKC Webtech Pvt. Ltd. · New Delhi</h5>
+            <ul class="text-muted">
+              <li>Delivered responsive Flutter + Laravel apps — <strong>~20%</strong> higher user engagement and
+                <strong>~15%</strong> lower bounce rate.</li>
+              <li>Optimized backend processes for <strong>~30%</strong> better performance and <strong>~25%</strong>
+                faster load times.</li>
+              <li><strong>Team Lead &amp; Project Coordinator</strong> — client requirement meetings, sprint planning
+                and end-to-end delivery; feedback-driven iterations lifted customer satisfaction <strong>~25%</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <span class="exp-period">Dec 2022 – Jan 2024</span>
+            <h4>Flutter Developer</h4>
+            <h5>Comptech Training &amp; Technology Pvt. Ltd.</h5>
+            <ul class="text-muted">
+              <li>Built responsive mobile UIs and integrated REST APIs across multiple client projects.</li>
+              <li>Handled on-device data management with SQLite and local storage for offline-first flows.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <span class="exp-period">Jan 2022 – Dec 2022</span>
+            <h4>Software Developer</h4>
+            <h5>Mobiloitte Technologies</h5>
+            <ul class="text-muted">
+              <li>Developed Flutter / Dart / Firebase mobile applications.</li>
+              <li>Collaborated on requirement analysis and conducted code reviews to maintain codebase quality.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- education strip -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-11 col-md-8">
+        <div class="edu-card" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h5><i class="bi bi-mortarboard-fill"></i> Education</h5>
+              <p class="text-muted mb-0"><strong>B.Tech / B.E.</strong> — KIPM College of Engineering &amp; Technology,
+                GIDA Gorakhpur · 2023</p>
+              <p class="text-muted mb-0"><small>Internship: Hospital Management System · CETPA (3 months)</small></p>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-patch-check-fill"></i> Certifications &amp; Languages</h5>
+              <p class="text-muted mb-0">Android Development with Kotlin Fundamentals · Core Java</p>
+              <p class="text-muted mb-0"><small>Languages: Hindi, English</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- experience section ends here -->
 
   <!-- portfolio section starts here -->
   <section class="portfolio" id="portfolio">
@@ -295,83 +426,164 @@
 
     <div id="myBtnContainer" class="text-center mt-4">
       <!-- here we will create custom attribute using data- for filtering -->
-      <button class="filter-item" data-filter="all">All</button>
-      <button class="filter-item" data-filter="game">Mobile App</button>
-      <button class="filter-item" data-filter="webapp">Web App</button>
+      <button class="filter-item active" data-filter="all">All</button>
+      <button class="filter-item" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-item" data-filter="web">Web Apps</button>
+      <button class="filter-item" data-filter="tool">AI &amp; Tools</button>
     </div>
     <div class="portfolio-body">
-      <div class="row justify-content-evenly px-4">
-        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      <div class="row justify-content-evenly px-4 g-4">
+        <!-- STM Retaspect -->
+        <div class="post col-md-4 mobile all col-10" data-aos="fade-up">
           <div class="card">
-            <img src="images/Screenshot 2025-08-21 at 8.57.15 PM.png" class="card-img-top" alt="..." />
+            <img src="images/Screenshot 2025-08-21 at 8.54.20 PM.png" class="card-img-top" alt="STM Retaspect" />
             <div class="card-body text-center">
-              <h4 class="card-title">Utsav Fashion</h4>
-              <span class="badge bg-secondary badge-pill">Flutter</span>
-              <span class="badge bg-secondary badge-pill">Dart</span>
-              <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br />
-              <a href="https://apps.apple.com/in/app/utsav-fashion-online-shopping/id6475716463" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/Screenshot 2025-08-21 at 8.59.03 PM.png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">Srank Bazaar</h4>
-              <span class="badge bg-secondary badge-pill">Flutter</span>
-              <span class="badge bg-secondary badge-pill">Dart</span>
-              <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br  />
-              <a href="https://apps.apple.com/in/app/srankbazaar/id6748201859" class="read-more-btn link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/Screenshot 2025-08-21 at 8.55.38 PM.png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">STM NXT</h4>
+              <h4 class="card-title">STM Retaspect</h4>
+              <p class="text-muted proj-desc">Retail field-force platform — 5-level RBAC, geo-fenced attendance &amp;
+                face verification.</p>
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill">Laravel</span>
-              <span class="badge bg-secondary badge-pill mb-2">Mobile and web App</span><br />
-              <a href="https://apps.apple.com/jp/app/stm-nxt/id6736826180" class="read-more-btn link">Read More</a>
+              <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br />
+              <a href="https://play.google.com/store/apps/details?id=com.nural.stmretail" class="link"
+                target="_blank">Play Store ↗</a>
+              <a href="https://apps.apple.com/in/app/stm-retaspect/id6764816997" class="link ms-2"
+                target="_blank">App Store ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- Hurema -->
+        <div class="post col-md-4 mobile web all col-10" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Screenshot 2025-08-21 at 8.54.45 PM.png" class="card-img-top" alt="Hurema HR & Payroll" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Hurema — HR &amp; Payroll</h4>
+              <p class="text-muted proj-desc">AI face-biometric attendance with a WebSocket punch pipeline &amp;
+                automated payroll.</p>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill">Python AI</span>
+              <span class="badge bg-secondary badge-pill mb-2">Mobile + Web</span><br />
+              <a href="https://play.google.com/store/apps/details?id=com.hurema.hurema" class="link"
+                target="_blank">Play Store ↗</a>
+              <a href="https://hurema.in/" class="link ms-2" target="_blank">Website ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- STM NXT -->
+        <div class="post col-md-4 mobile web all col-10" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Screenshot 2025-08-21 at 8.55.38 PM.png" class="card-img-top" alt="STM NXT" />
+            <div class="card-body text-center">
+              <h4 class="card-title">STM NXT — HRMS</h4>
+              <p class="text-muted proj-desc">HRMS with geolocation attendance, leave/shift management &amp; automated
+                payslips.</p>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill">Laravel</span>
+              <span class="badge bg-secondary badge-pill mb-2">Mobile + Web</span><br />
+              <a href="https://play.google.com/store/apps/details?id=com.akcworld.stm" class="link"
+                target="_blank">Play Store ↗</a>
+              <a href="https://apps.apple.com/jp/app/stm-nxt/id6736826180" class="link ms-2" target="_blank">App Store
+                ↗</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-evenly mt-4 px-4">
-        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      <div class="row justify-content-evenly mt-2 px-4 g-4">
+        <!-- Utsav Fashion -->
+        <div class="post col-md-4 mobile all col-10" data-aos="fade-up">
           <div class="card">
-            <img src="images/Screenshot 2025-08-21 at 8.52.40 PM.png" class="card-img-top" alt="..." />
+            <img src="images/Screenshot 2025-08-21 at 8.57.15 PM.png" class="card-img-top" alt="Utsav Fashion" />
             <div class="card-body text-center">
-              <h4 class="card-title">Akc Payroll</h4>
+              <h4 class="card-title">Utsav Fashion</h4>
+              <p class="text-muted proj-desc">Flutter eCommerce — dynamic listings, category filters, cart &amp; order
+                management.</p>
               <span class="badge bg-secondary badge-pill">Flutter</span>
-              <span class="badge bg-secondary badge-pill">Laravel</span>
-              <span class="badge bg-secondary badge-pill mb-2">Mobile And Web App</span><br />
-              <a href="https://payroll.daytek.in/dashbord" class="read-more-btn link">Read More</a>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br />
+              <a href="https://play.google.com/store/apps/details?id=com.utsavfashion.app" class="link"
+                target="_blank">Play Store ↗</a>
+              <a href="https://apps.apple.com/in/app/utsav-fashion-online-shopping/id6475716463" class="link ms-2"
+                target="_blank">App Store ↗</a>
             </div>
           </div>
         </div>
-        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <!-- Srank Bazaar -->
+        <div class="post col-md-4 mobile all col-10" data-aos="fade-up">
           <div class="card">
-            <img src="images/Screenshot 2025-08-21 at 8.56.14 PM.png" class="card-img-top" alt="..." />
+            <img src="images/Screenshot 2025-08-21 at 8.59.03 PM.png" class="card-img-top" alt="Srank Bazaar" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Srank Bazaar</h4>
+              <p class="text-muted proj-desc">JustDial-style business listing — search, filters, ratings &amp; owner
+                listings.</p>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill">BLoC</span>
+              <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br />
+              <a href="https://play.google.com/store/apps/details?id=com.SrankBazaar.BusinessListing" class="link"
+                target="_blank">Play Store ↗</a>
+              <a href="https://apps.apple.com/in/app/srankbazaar/id6748201859" class="link ms-2" target="_blank">App
+                Store ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- SHBBC -->
+        <div class="post col-md-4 mobile all col-10" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Screenshot 2025-08-21 at 8.56.14 PM.png" class="card-img-top" alt="SHBBC" />
             <div class="card-body text-center">
               <h4 class="card-title">SHBBC</h4>
+              <p class="text-muted proj-desc">Patient care &amp; diet tracking app for hospitals — activity &amp; health
+                metrics.</p>
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill">Firebase</span>
               <span class="badge bg-secondary badge-pill mb-2">Mobile App</span><br />
-              <a href="https://play.google.com/store/apps/details?id=com.akcwebtech.shbbc&pcampaignid=web_share" class="read-more-btn link">Read More</a>
+              <a href="https://play.google.com/store/apps/details?id=com.akcwebtech.shbbc" class="link"
+                target="_blank">Play Store ↗</a>
             </div>
           </div>
         </div>
-        <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+      </div>
+      <div class="row justify-content-evenly mt-2 px-4 g-4">
+        <!-- Apex API Client -->
+        <div class="post col-md-4 tool all col-10" data-aos="fade-up">
           <div class="card">
-            <img src="images/lang-translator.png" class="card-img-top" alt="..." />
+            <img src="images/Screenshot 2025-08-21 at 8.57.03 PM.png" class="card-img-top" alt="Apex API Client" />
             <div class="card-body text-center">
-              <h4 class="card-title">Lang Translator</h4>
-              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <h4 class="card-title">Apex — API Client</h4>
+              <p class="text-muted proj-desc">Offline-first, Postman-style API client for desktop &amp; mobile; codegen
+                for ~36 languages.</p>
+              <span class="badge bg-secondary badge-pill">Flutter Desktop</span>
+              <span class="badge bg-secondary badge-pill">BLoC</span>
+              <span class="badge bg-secondary badge-pill mb-2">Tool</span><br />
+              <a href="https://github.com/Hanuman-Sahani" class="link" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pratilekh -->
+        <div class="post col-md-4 tool all col-10" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Screenshot 2025-08-21 at 8.58.50 PM.png" class="card-img-top" alt="Pratilekh AI MoM" />
+            <div class="card-body text-center">
+              <h4 class="card-title">Pratilekh — AI MoM</h4>
+              <p class="text-muted proj-desc">Offline desktop app generating editable Minutes-of-Meeting from audio via
+                OpenAI Whisper.</p>
+              <span class="badge bg-secondary badge-pill">Python</span>
+              <span class="badge bg-secondary badge-pill">Whisper</span>
+              <span class="badge bg-secondary badge-pill mb-2">AI Tool</span><br />
+              <a href="https://upsalasolutions.com/" class="link" target="_blank">Website ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- Akc Payroll -->
+        <div class="post col-md-4 web all col-10" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Screenshot 2025-08-21 at 8.52.40 PM.png" class="card-img-top" alt="AKC Payroll" />
+            <div class="card-body text-center">
+              <h4 class="card-title">AKC Payroll</h4>
+              <p class="text-muted proj-desc">Web payroll dashboard — attendance, salary processing &amp; role-based
+                access.</p>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill">Laravel</span>
               <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
-              <a href="#" class="read-more-btn link">Read More</a>
+              <a href="https://payroll.daytek.in/dashbord" class="link" target="_blank">Live ↗</a>
             </div>
           </div>
         </div>
@@ -380,237 +592,264 @@
   </section>
   <!-- portfolio section ends here -->
 
- <!-- testimonial section starts  -->
-<section class="testimonial mt-5 pt-5" id="testimonial">
-  <div class="row justify-content-evenly">
-    <div class="col-md-4 col-10" data-aos="slide-right">
-      <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-    </div>
-    <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-      <div class="heading">
-        <small>Testimonials</small>
-        <h3>Happy Clients Feedback</h3>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- HRMS Payroll Testimonial -->
-            <div class="carousel-item active">
-              <div class="row justify-content-evenly">
-                <div class="col-2 text-center">
-                  <i class="bi bi-quote"></i>
+  <!-- testimonial section starts  -->
+  <section class="testimonial mt-5 pt-5" id="testimonial">
+    <div class="row justify-content-evenly">
+      <div class="col-md-4 col-10" data-aos="slide-right">
+        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+        <div class="heading">
+          <small>Testimonials</small>
+          <h3>Happy Clients Feedback</h3>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- HRMS Payroll Testimonial -->
+              <div class="carousel-item active">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "Our HRMS Payroll project, built using Flutter and Laravel, has transformed our payroll
+                      management. The app is intuitive and efficient."
+                    </p>
+                    <h4>Amit Kumar</h4>
+                    <small class="fs-6 text-muted">HR Manager</small>
+                  </div>
                 </div>
-                <div class="col-10">
-                  <p class="text-muted">
-                    "Our HRMS Payroll project, built using Flutter and Laravel, has transformed our payroll management. The app is intuitive and efficient."
-                  </p>
-                  <h4>Amit Kumar</h4>
-                  <small class="fs-6 text-muted">HR Manager</small>
+              </div>
+              <!-- eCommerce Testimonial -->
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "The eCommerce platform we developed is a game changer. Flutter and Laravel delivered a seamless
+                      shopping experience."
+                    </p>
+                    <h4>Rita Singh</h4>
+                    <small class="fs-6 text-muted">E-commerce Director</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Business Listing Testimonial -->
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "Our business listing website created with Flutter and Laravel is intuitive and responsive,
+                      significantly boosting our online presence."
+                    </p>
+                    <h4>Deepak Verma</h4>
+                    <small class="fs-6 text-muted">Marketing Head</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Field-Force Testimonial -->
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "The retail field-force platform with face-verified attendance streamlined our on-ground
+                      operations across every brand and region."
+                    </p>
+                    <h4>Sunita Patel</h4>
+                    <small class="fs-6 text-muted">Operations Director</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Blogging App Testimonial -->
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "The blogging app built on Flutter and Laravel offers a great user experience with its clean
+                      interface and engaging content features."
+                    </p>
+                    <h4>Rajesh Sharma</h4>
+                    <small class="fs-6 text-muted">Content Manager</small>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- eCommerce Testimonial -->
-            <div class="carousel-item">
-              <div class="row justify-content-evenly">
-                <div class="col-2 text-center">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="col-10">
-                  <p class="text-muted">
-                    "The eCommerce platform we developed is a game changer. Flutter and Laravel delivered a seamless shopping experience."
-                  </p>
-                  <h4>Rita Singh</h4>
-                  <small class="fs-6 text-muted">E-commerce Director</small>
-                </div>
-              </div>
-            </div>
-            <!-- Business Listing Testimonial -->
-            <div class="carousel-item">
-              <div class="row justify-content-evenly">
-                <div class="col-2 text-center">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="col-10">
-                  <p class="text-muted">
-                    "Our business listing website created with Flutter and Laravel is intuitive and responsive, significantly boosting our online presence."
-                  </p>
-                  <h4>Deepak Verma</h4>
-                  <small class="fs-6 text-muted">Marketing Head</small>
-                </div>
-              </div>
-            </div>
-            <!-- Bank Employee Leave Tracking Testimonial -->
-            <div class="carousel-item">
-              <div class="row justify-content-evenly">
-                <div class="col-2 text-center">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="col-10">
-                  <p class="text-muted">
-                    "The bank employee leave tracking system improved our operations dramatically. Flutter and Laravel provided a robust and reliable solution."
-                  </p>
-                  <h4>Sunita Patel</h4>
-                  <small class="fs-6 text-muted">HR Director, Bank</small>
-                </div>
-              </div>
-            </div>
-            <!-- Blogging App Testimonial -->
-            <div class="carousel-item">
-              <div class="row justify-content-evenly">
-                <div class="col-2 text-center">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <div class="col-10">
-                  <p class="text-muted">
-                    "The blogging app built on Flutter and Laravel offers a great user experience with its clean interface and engaging content features."
-                  </p>
-                  <h4>Rajesh Sharma</h4>
-                  <small class="fs-6 text-muted">Content Manager</small>
-                </div>
-              </div>
-            </div>
+            <!-- Carousel controls -->
+            <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <i class="bi bi-arrow-right-circle-fill"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <!-- Carousel controls -->
-          <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <i class="bi bi-arrow-left-circle-fill"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <i class="bi bi-arrow-right-circle-fill"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
   <!-- testimonial ends here -->
 
- <!-- blog section starts -->
-<!-- blog section starts -->
-<section class="blog mt-5 pb-5" id="blog">
-  <div class="heading text-center pt-5">
-    <small>Latest News</small>
-    <h3>Blog & Articles</h3>
-  </div>
-  <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
-    <!-- First Blog Post -->
-    <div class="blogpost col-md-4 col-10 mt-2 mt-md-0">
-      <div class="card">
-        <img src="https://images.goodreturns.in/webp/img/2024/12/trade-setup60051-1733452768.jpg" class="card-img-top rounded-4" alt="Global Markets Rally" />
-        <div class="card-body px-4">
-          <small>By Hanuman Sahani</small><span class="ms-3">Feb 25, 2025</span>
-          <h4 class="card-title">
-            <a href="">Global Markets Rally Amid Economic Recovery</a>
-          </h4>
-          <p class="text-muted">
-            Global stock markets surged today as major economies show signs of recovery following recent policy adjustments.
-          </p>
-          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal1">Read More</a>
-        </div>
-      </div>
+  <!-- highlights (spotlight) section starts -->
+  <section class="blog mt-5 pb-5" id="blog">
+    <div class="heading text-center pt-5">
+      <small>Deep Dives</small>
+      <h3>Project Highlights</h3>
     </div>
-    <!-- Second Blog Post -->
-    <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ky-ear5c_T7137fVA2S3Ro1wHG5zjUETA&s" class="card-img-top rounded-4" alt="Tech Giants Unveil AI Innovations" />
-        <div class="card-body px-4">
-          <small>By Hanuman Sahani</small><span class="ms-3">Feb 25, 2025</span>
-          <h4 class="card-title">
-            <a href="">Tech Giants Unveil Latest AI Innovations</a>
-          </h4>
-          <p class="text-muted">
-            Leading technology companies announced breakthroughs in artificial intelligence, promising to reshape industries with innovative applications.
-          </p>
-          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal2">Read More</a>
-        </div>
-      </div>
-    </div>
-    <!-- Third Blog Post -->
-    <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsaew1onTxOoQuw8UXQj5v7rH64tLmiJtsRQ&s" class="card-img-top rounded-4" alt="International Climate Summit" />
-        <div class="card-body px-4">
-          <small>By Hanuman Sahani</small><span class="ms-3">Feb 25, 2025</span>
-          <h4 class="card-title">
-            <a href="">International Climate Summit Ends With Historic Accord</a>
-          </h4>
-          <p class="text-muted">
-            World leaders concluded the summit with a historic accord, committing to ambitious targets for reducing carbon emissions.
-          </p>
-          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal3">Read More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal for First Blog Post -->
-  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle-fill"></i>
-        </button>
-        <div class="modal-body px-4">
-          <div class="img">
-            <img src="https://via.placeholder.com/400x300?text=Global+Markets" class="img-fluid" alt="Global Markets Rally" />
-          </div>
-          <div class="content mt-3">
-            <small>By Hanuman Sahani</small><span class="text-muted ms-2">Feb 25, 2025</span>
-            <h4 class="card-title mt-3">Global Markets Rally Amid Economic Recovery</h4>
-            <p class="text-muted mt-3">
-              In a significant turn of events, global stock markets experienced a surge as investors responded positively to new economic data and policy measures implemented by central banks. Analysts predict that if current trends continue, the recovery will be sustained, driven by improved consumer confidence and rising industrial output.
+    <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+      <!-- Highlight 1: AI Face Recognition -->
+      <div class="blogpost col-md-4 col-10 mt-2 mt-md-0">
+        <div class="card">
+          <img src="images/Screenshot 2025-08-21 at 8.54.45 PM.png" class="card-img-top rounded-4"
+            alt="AI Face-Recognition Attendance" />
+          <div class="card-body px-4">
+            <small>AI / Computer Vision</small><span class="ms-3">Production</span>
+            <h4 class="card-title">
+              <a href="#">AI Face-Recognition Attendance</a>
+            </h4>
+            <p class="text-muted">
+              Turned IP cameras into a payroll data source: RTSP → detection → ArcFace embeddings → FAISS matching →
+              temporal voting → signed punches.
             </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal1">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Modal for Second Blog Post -->
-  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle-fill"></i>
-        </button>
-        <div class="modal-body px-4">
-          <div class="img">
-            <img src="https://via.placeholder.com/400x300?text=Tech+Innovation" class="img-fluid" alt="Tech Giants Unveil AI Innovations" />
-          </div>
-          <div class="content mt-3">
-            <small>By Hanuman Sahani</small><span class="text-muted ms-2">Feb 25, 2025</span>
-            <h4 class="card-title mt-3">Tech Giants Unveil Latest AI Innovations</h4>
-            <p class="text-muted mt-3">
-              At a major technology conference, several industry leaders showcased their latest advancements in artificial intelligence. The new innovations aim to enhance automation, streamline data analysis, and drive smarter solutions across various sectors, setting the stage for the next wave of digital transformation.
+      <!-- Highlight 2: RetaSpect RBAC -->
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
+        <div class="card">
+          <img src="images/Screenshot 2025-08-21 at 8.54.20 PM.png" class="card-img-top rounded-4"
+            alt="RetaSpect Field-Force Platform" />
+          <div class="card-body px-4">
+            <small>Enterprise Platform</small><span class="ms-3">Web + Mobile</span>
+            <h4 class="card-title">
+              <a href="#">RetaSpect — 5-Level RBAC Field-Force</a>
+            </h4>
+            <p class="text-muted">
+              A multi-brand platform with a strict 5-level hierarchy, level-wise data visibility and multi-layer
+              geo-fenced attendance.
             </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal2">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Modal for Third Blog Post -->
-  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle-fill"></i>
-        </button>
-        <div class="modal-body px-4">
-          <div class="img">
-            <img src="https://via.placeholder.com/400x300?text=Climate+Summit" class="img-fluid" alt="International Climate Summit" />
-          </div>
-          <div class="content mt-3">
-            <small>By Hanuman Sahani</small><span class="text-muted ms-2">Feb 25, 2025</span>
-            <h4 class="card-title mt-3">International Climate Summit Ends With Historic Accord</h4>
-            <p class="text-muted mt-3">
-              In a landmark decision, world leaders at the International Climate Summit agreed on a comprehensive accord to combat climate change. The agreement includes stringent targets for reducing greenhouse gas emissions and a coordinated effort to transition to renewable energy sources, reflecting a unified global commitment to environmental sustainability.
+      <!-- Highlight 3: Apex API Client -->
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0">
+        <div class="card">
+          <img src="images/Screenshot 2025-08-21 at 8.57.03 PM.png" class="card-img-top rounded-4"
+            alt="Apex Offline-First API Client" />
+          <div class="card-body px-4">
+            <small>Developer Tool</small><span class="ms-3">Cross-Platform</span>
+            <h4 class="card-title">
+              <a href="#">Apex — Offline-First API Client</a>
+            </h4>
+            <p class="text-muted">
+              A Postman-style client on Clean Architecture + BLoC: nested collections, environments, WebSocket console
+              and code-gen for ~36 languages.
             </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#modal3">Read More</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-  <!-- blog section ends here -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/Screenshot 2025-08-21 at 8.54.45 PM.png" class="img-fluid rounded-4"
+                alt="AI Face-Recognition Attendance" />
+            </div>
+            <div class="content mt-3">
+              <small>AI / Computer Vision</small><span class="text-muted ms-2">Hurema HR &amp; Payroll</span>
+              <h4 class="card-title mt-3">AI Face-Recognition Attendance</h4>
+              <p class="text-muted mt-3">
+                I engineered a Python gate service that turns IP cameras into attendance sources. The pipeline runs
+                RTSP → detection &amp; tracking → quality gating → ArcFace embeddings → FAISS ANN matching → temporal
+                voting → HMAC-signed punches into the Laravel API. An enrollment pipeline builds the FAISS index from
+                payroll DB face photos, and a live dashboard streams per-camera MJPEG feeds and recognition events over
+                REST. Stack: Python, ArcFace/InsightFace, FAISS, ONNX Runtime, OpenCV, WebSocket, Laravel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/Screenshot 2025-08-21 at 8.54.20 PM.png" class="img-fluid rounded-4"
+                alt="RetaSpect Field-Force Platform" />
+            </div>
+            <div class="content mt-3">
+              <small>Enterprise Platform</small><span class="text-muted ms-2">STM Retaspect</span>
+              <h4 class="card-title mt-3">RetaSpect — Retail Field-Force Management</h4>
+              <p class="text-muted mt-3">
+                As Team Lead &amp; Project Coordinator I led client requirement meetings, finalized the SOW and managed
+                end-to-end web + mobile delivery. The platform enforces a 5-level hierarchy (Owner → Brand Admin →
+                Regional Manager → Team Leader → Field Staff) with strict RBAC and level-wise data visibility. Flutter
+                field modules include multi-layer attendance (geo-tagging, geo-fencing, selfie face verification, IP
+                validation), store IN/OUT, beat plans with TL approval, campaign execution, sales/pre-booking punching,
+                surveys, targets &amp; incentives, reimbursements and L&amp;D assessments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+            <i class="bi bi-x-circle-fill"></i>
+          </button>
+          <div class="modal-body px-4">
+            <div class="img">
+              <img src="images/Screenshot 2025-08-21 at 8.57.03 PM.png" class="img-fluid rounded-4"
+                alt="Apex API Client" />
+            </div>
+            <div class="content mt-3">
+              <small>Developer Tool</small><span class="text-muted ms-2">Personal Project</span>
+              <h4 class="card-title mt-3">Apex — Offline-First API Client</h4>
+              <p class="text-muted mt-3">
+                A cross-platform, Postman-style API client (Windows/macOS/Linux/Android/iOS) built on Clean
+                Architecture + BLoC with get_it DI and functional error handling (Either/dartz); 100% local persistence
+                via SQLite + SharedPreferences. It ships a tabbed workspace, nested drag-and-drop collections,
+                environment variable substitution at send time, rich response viewers, request history, code-snippet
+                generation for ~36 languages and a WebSocket/Socket.IO console. Windows releases are automated via
+                GitHub Actions — portable zip + Inno Setup installer attached to tagged Releases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- highlights section ends here -->
 
   <!-- contact section starts -->
   <section class="contact py-5" id="contact">
@@ -618,14 +857,15 @@
       <small>Get in Touch</small>
       <h3>Any Questions? Feel Free to Contact</h3>
     </div>
-    <div class="row justify-content-evenly mt-5">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="row justify-content-evenly mt-5">
       <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
         <div class="row justify-content-evenly">
           <div class="col-1">
             <i class="bi bi-geo-alt-fill"></i>
           </div>
           <div class="col-11">
-            <p>A34 ,Joshi Colony Mandawali Delhi</p>
+            <p>A34, Joshi Colony, Mandawali, New Delhi, India</p>
           </div>
         </div>
         <div class="row justify-content-evenly">
@@ -644,14 +884,15 @@
             <p>hanumansahani7388@gmail.com</p>
           </div>
         </div>
-        <!-- <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly">
           <div class="col-1">
-            <i class="bi bi-globe-americas"></i>
+            <i class="bi bi-linkedin"></i>
           </div>
           <div class="col-11">
-            <p>codingpawan.com</p>
+            <p><a href="https://www.linkedin.com/in/hanuman-sahani-928404246/" target="_blank"
+                class="contact-link">linkedin.com/in/hanuman-sahani</a></p>
           </div>
-        </div> -->
+        </div>
       </div>
       <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
         <form id="whatsAppForm" class="contact-form">
@@ -672,6 +913,7 @@
           </button>
         </form>
       </div>
+      </div>
     </div>
   </section>
   <!-- contact section ends here -->
@@ -683,17 +925,18 @@
 
   <!-- footer section starts  -->
   <footer class="text-center text-muted py-4">
-    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-    <div class="link-group mt-5" data-aos="fade-up">
+    <h3 class="text-white pt-4" data-aos="fade-up">Hanuman Sahani</h3>
+    <p class="text-muted mt-2" data-aos="fade-up">SDE-II · Flutter, Laravel &amp; AI/ML Developer</p>
+    <div class="link-group mt-4" data-aos="fade-up">
       <a href="#home">Home</a>
       <div class="vr"></div>
-      <a href="#about">About</a>
+      <a href="#about">Skills</a>
       <div class="vr"></div>
-      <a href="#service">Service</a>
+      <a href="#experience">Experience</a>
       <div class="vr"></div>
       <a href="#portfolio">Portfolio</a>
       <div class="vr"></div>
-      <a href="#blog">Blog</a>
+      <a href="#blog">Highlights</a>
       <div class="vr"></div>
       <a href="#contact">Contact</a>
     </div>
@@ -710,16 +953,14 @@
       <a href="https://www.instagram.com/er.__hanuman.__sahani/posts/" target="_blank" class="rounded-pill instagram">
         <i class="bi bi-instagram fs-2"></i>
       </a>
-      <a href="https://github.com/king7388" target="_blank" class="rounded-pill github">
+      <a href="https://github.com/Hanuman-Sahani" target="_blank" class="rounded-pill github">
         <i class="bi bi-github fs-2"></i>
       </a>
     </div>
 
-
-
     <hr class="text-muted my-4" />
 
-    <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+    <p>Copyright © 2026 Hanuman Sahani | All Rights Reserved.</p>
   </footer>
   <!-- footer section ends here -->
 
@@ -744,6 +985,3 @@
 
 
 </html>
-
-
-

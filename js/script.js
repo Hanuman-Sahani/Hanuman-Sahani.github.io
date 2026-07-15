@@ -83,9 +83,55 @@ let progressreact = setInterval(() => {
 }, rjsspeed);
 
 
+// python progress circular bar
+let pythonProgress = document.querySelector(".python"),
+  pythonValue = document.querySelector(".python-progress");
+
+let pythonStartValue = 0,
+  pythonEndValue = 88,
+  pyspeed = 30;
+
+let progresspython = setInterval(() => {
+  pythonStartValue++;
+
+  pythonValue.textContent = `${pythonStartValue}%`;
+  pythonProgress.style.background = `conic-gradient(#3776AB ${
+    pythonStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (pythonStartValue == pythonEndValue) {
+    clearInterval(progresspython);
+  }
+}, pyspeed);
+
+// ai/ml progress circular bar
+let aimlProgress = document.querySelector(".aiml"),
+  aimlValue = document.querySelector(".aiml-progress");
+
+let aimlStartValue = 0,
+  aimlEndValue = 85,
+  aimlspeed = 30;
+
+let progressaiml = setInterval(() => {
+  aimlStartValue++;
+
+  aimlValue.textContent = `${aimlStartValue}%`;
+  aimlProgress.style.background = `conic-gradient(#00C2A8 ${
+    aimlStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (aimlStartValue == aimlEndValue) {
+    clearInterval(progressaiml);
+  }
+}, aimlspeed);
+
 // filter using javascript
 $(document).ready(function () {
   $(".filter-item").click(function () {
+    // toggle active state on filter buttons
+    $(".filter-item").removeClass("active");
+    $(this).addClass("active");
+
     const value = $(this).attr("data-filter");
     if (value == "all") {
       $(".post").show("1000");
