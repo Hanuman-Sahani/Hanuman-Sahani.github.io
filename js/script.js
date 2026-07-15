@@ -31,6 +31,23 @@
   /* ---------- Back to top ---------- */
   toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
+  /* ---------- Theme toggle (dark / light) ---------- */
+  const root = document.documentElement;
+  const themeBtn = $("#themeBtn");
+  const syncThemeIcon = () => {
+    const dark = root.getAttribute("data-theme") === "dark";
+    if (themeBtn) themeBtn.innerHTML = dark ? '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-stars"></i>';
+  };
+  syncThemeIcon();
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      syncThemeIcon();
+    });
+  }
+
   /* ---------- Scroll reveal (IntersectionObserver) ---------- */
   const revealEls = $$("[data-reveal]");
   // subtle stagger for siblings sharing a parent

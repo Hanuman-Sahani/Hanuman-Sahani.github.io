@@ -22,7 +22,12 @@
   <!-- styles -->
   <link rel="stylesheet" href="css/style.css" />
   <script>
-    document.documentElement.classList.add("js");
+    (function () {
+      var t = localStorage.getItem("theme");
+      if (!t) { t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.add("js");
+    })();
   </script>
 </head>
 
@@ -43,6 +48,7 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-cta">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
         <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
         <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="bi bi-list"></i></button>
       </div>
@@ -274,6 +280,11 @@
               <div><h3>STM Retaspect</h3><span class="proj-cat">Retail Field-Force</span></div>
             </div>
             <p>Multi-brand platform with a 5-level RBAC hierarchy, geo-fenced attendance, selfie face verification, beat plans and sales punching.</p>
+            <ul class="proj-feats">
+              <li>5-level RBAC hierarchy (Owner &rarr; Field Staff)</li>
+              <li>Attendance: geo-fence, selfie face-verify &amp; IP</li>
+              <li>Beat plans, campaigns, sales &amp; incentives</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.nural.stmretail" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -288,6 +299,11 @@
               <div><h3>Hurema</h3><span class="proj-cat">AI HR &amp; Payroll</span></div>
             </div>
             <p>AI face-biometric attendance with a WebSocket punch pipeline from biometric devices and fully automated salary processing.</p>
+            <ul class="proj-feats">
+              <li>WebSocket punch pipeline from IP cameras</li>
+              <li>ArcFace + FAISS face-recognition service</li>
+              <li>Auto salary from shifts, overtime &amp; leave</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Python AI</span><span class="tag">Laravel</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.hurema.hurema" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -302,6 +318,11 @@
               <div><h3>STM NXT</h3><span class="proj-cat">HRMS</span></div>
             </div>
             <p>HRMS with geolocation attendance, leave &amp; shift management, automated payroll and payslip generation across mobile &amp; web.</p>
+            <ul class="proj-feats">
+              <li>Geolocation attendance &amp; shift management</li>
+              <li>Automated payroll &amp; payslip generation</li>
+              <li>Secure role-based auth (mobile + web)</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Laravel</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.akcworld.stm" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -316,6 +337,11 @@
               <div><h3>Utsav Fashion</h3><span class="proj-cat">E-commerce</span></div>
             </div>
             <p>Flutter eCommerce app with dynamic listings, category filters, cart and complete order management.</p>
+            <ul class="proj-feats">
+              <li>Dynamic listings &amp; category filters</li>
+              <li>Cart &amp; full order management</li>
+              <li>Smooth, secure checkout flow</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.utsavfashion.app" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -330,6 +356,11 @@
               <div><h3>Srank Bazaar</h3><span class="proj-cat">Business Listing</span></div>
             </div>
             <p>JustDial-style business listing app — search, filters, ratings, reviews and owner listing management.</p>
+            <ul class="proj-feats">
+              <li>Search, filters &amp; categories</li>
+              <li>Ratings &amp; reviews</li>
+              <li>Owner listing management</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">BLoC</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.SrankBazaar.BusinessListing" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -344,6 +375,11 @@
               <div><h3>SHBBC</h3><span class="proj-cat">Healthcare</span></div>
             </div>
             <p>Patient care &amp; diet tracking app for hospitals — activity, dietary intake and health metrics.</p>
+            <ul class="proj-feats">
+              <li>Activity &amp; dietary intake logging</li>
+              <li>Health-metric tracking</li>
+              <li>Push reminders (FCM)</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
             <div class="proj-links">
               <a href="https://play.google.com/store/apps/details?id=com.akcwebtech.shbbc" target="_blank"><i class="bi bi-google-play"></i> Play</a>
@@ -357,6 +393,11 @@
               <div><h3>Apex</h3><span class="proj-cat">Developer Tool</span></div>
             </div>
             <p>Offline-first, Postman-style API client for desktop &amp; mobile on Clean Architecture + BLoC; code-gen for ~36 languages and a WebSocket console.</p>
+            <ul class="proj-feats">
+              <li>Nested collections &amp; environments</li>
+              <li>Code-gen for ~36 languages</li>
+              <li>WebSocket console + CI/CD releases</li>
+            </ul>
             <div class="tags"><span class="tag">Flutter Desktop</span><span class="tag">SQLite</span><span class="tag">CI/CD</span></div>
             <div class="proj-links">
               <a href="https://github.com/Hanuman-Sahani" target="_blank"><i class="bi bi-github"></i> GitHub</a>
@@ -370,6 +411,11 @@
               <div><h3>Pratilekh</h3><span class="proj-cat">AI Minutes-of-Meeting</span></div>
             </div>
             <p>Offline desktop app that auto-generates structured, editable Minutes-of-Meeting from audio using OpenAI Whisper.</p>
+            <ul class="proj-feats">
+              <li>OpenAI Whisper speech-to-text</li>
+              <li>Structured, editable minutes</li>
+              <li>Offline Windows / macOS desktop</li>
+            </ul>
             <div class="tags"><span class="tag">Python</span><span class="tag">Whisper</span></div>
             <div class="proj-links">
               <a href="https://upsalasolutions.com/" target="_blank"><i class="bi bi-globe"></i> Website</a>
